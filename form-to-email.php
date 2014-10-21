@@ -20,7 +20,7 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'sawyerv726@gmail.com';//<== update the email address
+$email_from = "sawyer.vaughan@students.olin.edu";//<== update the email address
 $email_subject = "New Form submission";
 $email_body = "You have received a new message from the user $email.\n".
     
@@ -28,16 +28,14 @@ $to = "sawyer.vaughan@students.olin.edu";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
-    echo $visitor_email;
-    exit;
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
-header('Location: index.html');
 
 $myfile = fopen("emails.txt", "w") or die("Unable to open file!");
-fwrite($myfile, $visitor_email);
+fwrite($myfile, "$visitor_email\n");
 fclose($myfile);
 
+header('Location: index.html');
 // Function to validate against any email injection attempts
 function IsInjected($str)
 {
