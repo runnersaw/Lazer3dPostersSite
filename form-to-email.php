@@ -28,6 +28,8 @@ $to = "sawyer.vaughan@students.olin.edu";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
+    echo $visitor_email;
+    exit;
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
 header('Location: index.html');
