@@ -1,0 +1,27 @@
+.about-container {
+	position: relative;
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	height: 80vh;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.about-image {
+	background: #ffdb4c;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.about-image-container {
+	position: relative;
+	height: 100%;
+}
+
+.about-text-container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
