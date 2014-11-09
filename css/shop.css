@@ -24,8 +24,12 @@
     padding-right: 30px;
     width: 100%;
     z-index: 1;
-    background-color: white;
+    background-color: #eee;
     opacity: 100%;
+}
+.btn {
+  color: white;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .page-header {
