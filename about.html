@@ -12,6 +12,9 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="bootstrap/js/bootstrap.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href="css/material-wfont.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -43,7 +46,7 @@
 	</div>
 	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
 		<div class="container">
-			<div class="navbar-text pull-left">
+			<div class="navbar-text pull-left" style="padding-top: 10px">
 				Like what you see? Sign up to get alerts here:
 			</div>
 			<form class="navbar-form navbar-right" role="search" action="form-to-email.php" method="post">
@@ -54,5 +57,15 @@
 			</form>
 		</div>
 	</div>
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <script src="js/ripples.min.js"></script>
+        <script src="js/material.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $.material.init();
+            });
+        </script>
 </body>
 </html>

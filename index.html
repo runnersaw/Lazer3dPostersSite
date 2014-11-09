@@ -10,19 +10,23 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="bootstrap/js/bootstrap.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href="css/material-wfont.min.css" rel="stylesheet">
 	<style type="text/css">
 		.carousel {
 			width: 100vw;
-			height: 100vh;
+			height: 95vh;
 		}
 		.carousel-inner {
 			width: 100vw;
-			height: 100vh;
+			height: 95vh;
 		}
 		.pic {
 			width: 100vw;
-			height: 100vh;
+			height: 95vh;
 		}
+
 	</style>
 </head>
 <body>
@@ -44,16 +48,7 @@
 			</div>
 		</div>
 	</div>
-	<!--<div class="container-fluid" style="margin-top:50px">
-		<div class="row">
-			<div class="column">
-				<img class="pic" style="width:100vw;z-index:-1;position:absolute;" src="images/phoenix.jpg">
-				<script type="text/javascript">
-					height = $(window).height();
-					$(".pic").height(height-70);
-				</script>
-			</div>
-		</div>
+
 	</div>-->
 	<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
 	    <!-- Carousel indicators -->
@@ -82,9 +77,10 @@
 	        <span class="glyphicon glyphicon-chevron-right"></span>
 	    </a>
 	</div>
+
 	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
 		<div class="container">
-			<div class="navbar-text pull-left">
+			<div class="navbar-text pull-left" style="padding-top: 10px">
 				Like what you see? Sign up to get alerts here:
 			</div>
 			<form class="navbar-form navbar-right" role="search" action="form-to-email.php" method="post">
@@ -95,5 +91,16 @@
 			</form>
 		</div>
 	</div>
+
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <script src="js/ripples.min.js"></script>
+        <script src="js/material.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $.material.init();
+            });
+        </script>
 </body>
 </html>
