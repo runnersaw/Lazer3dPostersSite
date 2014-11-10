@@ -31,21 +31,9 @@
   color: white;
   text-align: center;
 }
-@media (min-width: 768px) {
-  .page-header {
-    width: 720px;
+.page-header {
+    width: 100vw;
   }
-}
-@media (min-width: 992px) {
-  .page-header {
-    width: 940px;
-  }
-}
-@media (min-width: 1200px) {
-  .page-header {
-    width: 1140px;
-  }
-}
 @media (min-width: 768px) {
   #title {
     font-size: 36px;
