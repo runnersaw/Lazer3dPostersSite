@@ -16,12 +16,28 @@
     <link href="css/ripples.min.css" rel="stylesheet">
     <link href="css/material-wfont.min.css" rel="stylesheet">
     <style type="text/css">
-		.email-form{
-            @media(min-width:992px){
-                float right !important;
-            }    
+        
+        @media (min-width: 992px){
+            .email-form{
+                float: right !important;
+                display: inline-block;
+            }
         }
-
+        @media (max-width: 991px){
+            .email-form{
+                margin: 0 auto;
+                padding: 0 auto;
+                display: inline-flex;
+            }
+            
+            .submit-field{
+                width: auto;
+                margin: 0 auto;
+                padding: 0 auto;
+                transform: translateY(10px)
+            }
+        }
+        
 	</style>
 </head>
 <body>
@@ -59,7 +75,7 @@
                     Like what you see? Sign up to get alerts here:
                 </div>
                 <form class="navbar-form email-form input-group" role="search" action="form-to-email.php" method="post">
-                    <div class="form-group">
+                    <div class="form-group submit-field">
                         <input type="text" class="form-control" name="email" placeholder="Email" style="bottom: 0px">
                     </div>
                     <input type="submit" name="submit" value="Submit" class="btn btn-default pull">
