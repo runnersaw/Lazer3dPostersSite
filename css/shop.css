@@ -31,9 +31,9 @@
   color: white;
   text-align: center;
 }
-.page-header {
-    width: 100vw;
-  }
+.page-header{
+  width: 100vw;
+}
 @media (min-width: 768px) {
   #title {
     font-size: 36px;
@@ -57,7 +57,7 @@
 #cart-pic {
   width: 55px;
   height: 55px;
-  padding-left: 0;
+  margin-left: 30;
 }
 @media (max-width: 768px) {
   #cart-pic {

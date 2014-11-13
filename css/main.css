@@ -1,26 +1,50 @@
-.about-container {
-	position: relative;
-	width: 75vw;
-	margin-left: 10vw;
-	margin-right: 10vw;
-	height: 75vh;
-	margin-top: 10vh;
-	margin-bottom: 10vh;
+@media (min-width: 768px) {
+
+    .featurette {
+        position: relative;
+        margin-top: 35vh;
+        width: 90vw;
+        padding-left: 5vw;
+    }
+
+    .featurette-heading {
+        margin-left: 2.5vw;
+    }
+
+    .featurette-image {
+        transform: translateY(-25%)
+    }
+
+    }
+    .lead {
+        margin-left: 2.5vw;
+    }
+}
+@media (max-width @screen-sm-max){
+    
+    .featurette {
+        position: relative;
+        margin-top: 10vh;
+        margin-left: 2.5vw;
+    }
+
+    .featurette-heading {
+        margin-left: 2.5vw;
+    }
+
+    .featurette-image {
+        transform: translateY(-25%)
+    }
+
+    }
+    .lead {
+        margin-left: 2.5vw;
+    }
 }
 
-.about-image {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
 
-.about-image-container {
-	position: relative;
-	height: 100%;
-}
 
-.about-text-container {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+
+.email-form {
+    float: right !important;
 }
