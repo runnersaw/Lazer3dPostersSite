@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Stacked Art</title>
     <meta name="description" content="Laser cut stacked artwork">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="keywords" content="Stacked, Art, Laser, Cut, Poster, 3D">
-    <meta name="p:domain_verify" content="3257c3ef8366a7e07fb459d9d1ba59e3"/>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="p:domain_verify" content="3257c3ef8366a7e07fb459d9d1ba59e3" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/ripples.min.css" rel="stylesheet">
     <link href="css/material-wfont.min.css" rel="stylesheet">
     <style type="text/css">
-        
-        @media (min-width: 992px){
-            .email-form{
+        @media (min-width: 992px) {
+            .email-form {
                 float: right !important;
+                transform: translateY(10px);
+                margin-right: 2.5%;
                 display: inline-block;
             }
         }
-        @media (max-width: 991px){
-            .email-form{
+        @media (max-width: 991px) {
+            .email-form {
+                width=100%;
                 margin: 0 auto;
-                padding: 0 auto;
                 display: inline-flex;
             }
-            
-            .submit-field{
+            .submit-field {
                 width: auto;
-                margin: 0 auto;
-                padding: 0 auto;
                 transform: translateY(10px)
             }
         }
-        
-	</style>
+    </style>
 </head>
+
 <body>
     <div container>
         <div class="navbar navbar-material-indigo navbar-fixed-top" role="navigation">
@@ -54,43 +53,49 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="#">About</a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li class="active"><a href="#">About</a>
+                        </li>
+                        <li><a href="shop.html">Shop</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="row featurette" >
-            <div class="col-md-7">
-                <h1 class="featurette-heading" style="margin-top: 10px; ">The Stacked Story</h1>
-                <p class="lead"> The Stacked Art team is made up of a small group of passionate college students looking to bring you unique, cutting edge wall art. We are commited to using ethically sourced and quality materials in order to give you an art piece you are proud to hang on your walls.</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive about-image pull right" src="images/phoenix.jpg">
-            </div>
-        </div>
-        <div class="navbar navbar-material-indigo navbar-fixed-bottom" role="navigation">
-                <div class="navbar-text pull-left visible-md visible-lg" style="padding-top: 10px; padding-left:35px">
-                    Like what you see? Sign up to get alerts here:
+        <div class="wrapper" style="text-align: center">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h1 class="featurette-heading">The Stacked Story</h1>
+                    <p class="lead">The Stacked Art team is made up of a small group of passionate college students looking to bring you unique, cutting edge wall art. We are commited to using ethically sourced and quality materials in order to give you an art piece you are proud to hang on your walls.</p>
                 </div>
-                <form class="navbar-form email-form input-group" role="search" action="form-to-email.php" method="post">
-                    <div class="form-group submit-field">
-                        <input type="text" class="form-control" name="email" placeholder="Email" style="bottom: 0px">
-                    </div>
-                    <input type="submit" name="submit" value="Submit" class="btn btn-default pull">
-                </form>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive about-image pull right" src="images/phoenix.jpg">
+                </div>
             </div>
         </div>
-	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <div class="navbar navbar-material-indigo navbar-fixed-bottom" role="navigation" style="text-align: center;">
+            <div class="navbar-text pull-left visible-md visible-lg" style="padding-top: 10px; padding-left:35px">
+                Like what you see? Sign up to get alerts here:
+            </div>
+            <form class="navbar-form email-form input-group" role="search" action="form-to-email.php" method="post" style="margin-top: 0;">
+                <div class="form-group submit-field">
+                    <input type="text" class="form-control" name="email" placeholder="Email" style="bottom: 0px">
+                </div>
+                <input type="submit" name="submit" value="Submit" class="btn btn-default pull">
+            </form>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-        <script src="js/ripples.min.js"></script>
-        <script src="js/material.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $.material.init();
-            });
-        </script>
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.material.init();
+        });
+    </script>
 </body>
+
 </html>

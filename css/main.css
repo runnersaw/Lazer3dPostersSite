@@ -1,43 +1,42 @@
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     .featurette {
         position: relative;
-        margin-top: 35vh;
-        width: 90vw;
-        padding-left: 5vw;
-    }
+        margin-top: 10%;
+        width: 100vw;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        }
 
     .featurette-heading {
-        margin-left: 2.5vw;
+        margin-left: 5%;
     }
 
     .featurette-image {
-        transform: translateY(-25%)
+        transform: translateY(30px);
+        margin: 0 auto;
     }
-
-    }
-    .lead {
-        margin-left: 2.5vw;
+    
+    .lead{
+        margin-left: 5%;   
     }
 }
-@media (max-width @screen-sm-max){
+/*@media (max-width: 991){
     
     .featurette {
         position: relative;
-        margin-top: 10vh;
-        margin-left: 2.5vw;
+        width: 50vw;
+        display: block
     }
 
     .featurette-heading {
-        margin-left: 2.5vw;
+        margin-left: 2.5%;
+        margin-top: 100px !important
     }
 
     .featurette-image {
         transform: translateY(-25%)
     }
+}*/
 
-    }
-    .lead {
-        margin-left: 2.5vw;
-    }
-}

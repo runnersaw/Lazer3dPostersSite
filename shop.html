@@ -15,8 +15,29 @@
     <link href="css/ripples.min.css" rel="stylesheet">
     <link href="css/material-wfont.min.css" rel="stylesheet">
     <style type="text/css">
+        @media (min-width: 992px){
+            .email-form{
+                float: right !important;
+                transform: translateY(10px);
+                margin-right: 2.5%;
+                display: inline-block;
+            }
+        }
+        @media (max-width: 991px){
+            .email-form{
+                width = 100%;
+                margin: 0 auto;
+                display: inline-flex;
+            }
+            
+            .submit-field{
+                width: auto;
+                transform: translateY(10px)
+            }
+        }
+        
         .shop-grid{
-            padding-top: 20vh;
+            padding-top: 20px;
             padding-bottom: 10vh;
         }
     </style>
@@ -178,19 +199,18 @@
     </div>
 
 
-    <div class="navbar navbar-material-indigo navbar-fixed-bottom" role="navigation">
-        <div class="container">
-            <div class="navbar-text pull-left" style="padding-top: 10px">
-                Like what you see? Sign up to get alerts here:
-            </div>
-            <form class="navbar-form navbar-right" role="search" action="form-to-email.php" method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="email" placeholder="Email">
+    <div class="navbar navbar-material-indigo navbar-fixed-bottom" role="navigation" style="text-align: center;">
+                <div class="navbar-text pull-left visible-md visible-lg" style="padding-top: 10px; padding-left:35px">
+                    Like what you see? Sign up to get alerts here:
                 </div>
-                <input type="submit" name="submit" value="Submit" class="btn btn-default">
-            </form>
+                <form class="navbar-form email-form input-group" role="search" action="form-to-email.php" method="post" style="margin-top: 0;">
+                    <div class="form-group submit-field">
+                        <input type="text" class="form-control" name="email" placeholder="Email" style="bottom: 0px">
+                    </div>
+                    <input type="submit" name="submit" value="Submit" class="btn btn-default pull">
+                </form>
+            </div>
         </div>
-    </div>
 
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
