@@ -1,0 +1,42 @@
+@media (min-width: 992px) {
+
+    .featurette {
+        position: relative;
+        margin-top: 10%;
+        width: 100vw;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    .featurette-heading {
+        margin-left: 5%;
+    }
+
+    .featurette-image {
+        transform: translateY(30px);
+        margin: 0 auto;
+    }
+    
+    .lead{
+        margin-left: 5%;   
+    }
+}
+/*@media (max-width: 991){
+    
+    .featurette {
+        position: relative;
+        width: 50vw;
+        display: block
+    }
+
+    .featurette-heading {
+        margin-left: 2.5%;
+        margin-top: 100px !important
+    }
+
+    .featurette-image {
+        transform: translateY(-25%)
+    }
+}*/
+
