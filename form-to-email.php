@@ -20,18 +20,7 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = "sawyer.vaughan@students.olin.edu";//<== update the email address
-$email_subject = "New Form submission";
-$email_body = "You have received a new message from the user $email.\n".
-    
-$to = "sawyer.vaughan@students.olin.edu";//<== update the email address
-$headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
-//Send the email!
-mail($to,$email_subject,$email_body,$headers);
-//done. redirect to thank-you page.
-
-$myfile = fopen("emails.txt", "w") or die("Unable to open file!");
+$myfile = fopen("emails.txt", "a") or die("Unable to open file!");
 fwrite($myfile, "$visitor_email\n");
 fclose($myfile);
 
